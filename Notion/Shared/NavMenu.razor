@@ -1,0 +1,39 @@
+﻿@using Notion.Models
+@inject NavigationManager NavigationManager
+@inject INotionService NotionService
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button @onclick="CreateNote">Додати</button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="">Count: @noteCount</a>
+              </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+</nav>
+
+@code{
+    private int noteCount;
+
+    protected override async Task OnInitializedAsync()
+    {
+    // Call your service method to get the note count
+        noteCount = await NotionService.GetCountNotes();
+    }
+    void CreateNote()
+    {
+        NavigationManager.NavigateTo("note");
+    }
+    
+
+}

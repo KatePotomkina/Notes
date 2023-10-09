@@ -1,0 +1,43 @@
+.container[b-c92o2fmal6] {
+    max-width: 500px;
+}
+
+/* Center the form within the container */
+h3[b-c92o2fmal6] {
+    text-align: center;
+}
+
+/* Add margin to the top of the container */
+.mt-4[b-c92o2fmal6] {
+    margin-top: 20px;
+}
+/* Custom form styles */
+.custom-form[b-c92o2fmal6] {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.custom-form .mb-3[b-c92o2fmal6] {
+    margin-bottom: 20px;
+}
+
+.custom-form .form-label[b-c92o2fmal6] {
+    font-weight: bold;
+}
+
+.custom-form textarea.form-control[b-c92o2fmal6] {
+    resize: vertical;
+}
+
+.custom-form .btn-primary[b-c92o2fmal6] {
+    width: 100%;
+}
+
+/* Center the button */
+.custom-form .text-center[b-c92o2fmal6] {
+    text-align: center;
+}

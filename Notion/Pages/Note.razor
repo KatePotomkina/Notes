@@ -1,0 +1,50 @@
+@page "/note"
+
+@inject INotionService NotionService
+
+<EditForm Model="note" OnSubmit="HandleSubmit" class="custom-form">
+    <div>
+        <label for="name">Title</label>
+        <InputText id="name" @bind-Value="note.Title" class="form-control"></InputText>
+    </div>
+    <div>
+        <label for="content">Content</label>
+        <InputText id="content" @bind-Value="note.Content" class="form-control"></InputText>
+    </div>
+    <div>
+        <label for="created">Created</label>
+        <InputText id="created" @bind-Value="formattedCreated" class="form-control" readonly></InputText>
+    </div>
+
+
+    <br/>
+    <button type="submit" class="btn btn-primary">@btnText</button>
+   
+</EditForm>
+
+@code {
+    readonly Models.Notes note = new();
+
+    [Parameter]
+    public int? Id { get; set; }
+
+    private string formattedCreated = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); // Format the date as needed
+
+    string btnText = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        btnText = "Save New Note";
+    }
+
+
+    async Task HandleSubmit()
+    {
+        if (Id == null)
+        {
+            await NotionService.CreateNote(note);
+        }
+
+    }
+
+}

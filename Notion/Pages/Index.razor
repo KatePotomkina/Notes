@@ -1,0 +1,95 @@
+﻿@page "/"
+@inject INotionService NotionService
+
+<div class="input-group mb-3">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" @bind="searchTerm">
+    <button class="btn btn-outline-secondary"  @onclick="SearchNotes" type="button">Search</button>
+</div>
+   
+<div class="container">
+    <table class="responsive-table">
+     <tbody>
+        @foreach (var note  in filteredNotes )
+        {
+            <tr class="table-row ">
+                <td class="col col-1 static-cell">@note.Title</td>
+
+                <td class="col col-1 static-cell">
+                    @{
+                        // Calculate the time difference
+                        var timeDifference = DateTime.Now - note.Created_At;
+
+                        // Display the number of days ago
+                        var daysAgo = (int)timeDifference.TotalDays;
+                    }
+                    @daysAgo days ago
+                </td>
+
+                <td static-cell>
+                    <button @onclick="() => ToggleContent(note.Id)">Подивитися</button>
+                    <button @onclick="() => EditNote(note)">Редагувати</button>
+                </td>
+            </tr>
+            @if (selectedNoteId == note.Id)
+            {
+                <tr>
+                    <td colspan="3">
+                        <textarea @bind="note.Content" class="form-control">@note.Content</textarea>
+                        <button @onclick="() => SaveChanges(note)">Save Changes</button>
+                    </td>
+                </tr>
+            }
+        }
+
+        </tbody>
+    </table>
+</div>
+
+@code {
+
+    private string searchTerm = ""; 
+    private List<Models.Notes> filteredNotes = new List<Models.Notes>(); 
+
+
+    protected override async Task OnInitializedAsync()
+    {
+      await NotionService.GetNotes();
+        filteredNotes = NotionService.NotesList.ToList(); 
+
+    }
+
+    private int selectedNoteId = -1;
+
+    private void ToggleContent(int noteId)
+    {
+        if (selectedNoteId == noteId)
+        {
+            selectedNoteId = -1; // Hide content
+        }
+        else
+        {
+            selectedNoteId = noteId; // Show content for the selected note
+        }
+    }
+
+    private void EditNote(Models.Notes note)
+    {
+        selectedNoteId = note.Id;
+    }
+
+    private async Task SaveChanges(Models.Notes note)
+    {
+        await NotionService.EditNote(note, note.Id);
+        
+        selectedNoteId = -1;
+    }
+    private void SearchNotes()
+    {
+        filteredNotes = NotionService.NotesList
+            .Where(note => note.Title.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                           note.Content.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+    }
+
+
+}

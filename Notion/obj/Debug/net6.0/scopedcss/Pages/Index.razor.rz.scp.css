@@ -1,0 +1,170 @@
+/* Page background color and font */
+body[b-zv7gybnpn7] {
+    font-family: 'lato', sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Apply styles to the entire table */
+table[b-zv7gybnpn7] {
+    width: 100%;
+    
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the table */
+    border-radius: 10px; /* Rounded corners for the table */
+}
+
+.container[b-zv7gybnpn7] {
+    max-width: 1000px;
+    margin: 20px auto; /* Center the container with some margin */
+    padding: 20px;
+    background-color: #fff; /* White background for the container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+}
+
+h2[b-zv7gybnpn7] {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+    color: #333; /* Dark gray text color */
+}
+
+/* Style for each row */
+.table-row[b-zv7gybnpn7] {
+    background-color: #fff; /* White background for rows */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+transition: background-color 0.2s ease; /* Smooth color transition on hover */
+    border-radius: 5px; /* Rounded corners for rows */
+    height: fit-content;
+}
+
+/* Apply green background color on hover */
+.table-row:hover[b-zv7gybnpn7] {
+    background-color: #66bb6a; /* Green color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Style for table headers */
+.table-header[b-zv7gybnpn7] {
+    background-color: #ff9800; /* Orange color for headers */
+    color: #fff; /* White text color for headers */
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-top-left-radius: 5px; /* Rounded corners for header */
+    border-top-right-radius: 5px;
+}
+
+/* Style for each column */
+.col[b-zv7gybnpn7] {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Style for buttons */
+button[b-zv7gybnpn7] {
+    margin-left: 10px;
+    float: right;
+    background-color: #ff9800; /* Orange color for buttons */
+    color: #fff; /* White text color for buttons */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Smooth color transition on hover */
+}
+
+/* Button hover effect */
+button:hover[b-zv7gybnpn7] {
+    background-color: #f57c00; /* Darker orange on hover */
+}
+/* Style for the search input group */
+.input-group[b-zv7gybnpn7] {
+    margin-bottom: 20px;
+}
+
+/* Style for the table */
+.responsive-table[b-zv7gybnpn7] {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Style for table headers */
+.responsive-table th[b-zv7gybnpn7] {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Style for table cells */
+.responsive-table td[b-zv7gybnpn7] {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Style for buttons */
+button[b-zv7gybnpn7] {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the selected row */
+.responsive-table tr.selected[b-zv7gybnpn7] {
+    background-color: #f0f0f0;
+}
+
+/* Style for the text area inside the table */
+.responsive-table textarea[b-zv7gybnpn7] {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    resize: vertical;
+}
+
+/* Style for the Save Changes button */
+.responsive-table .save-button[b-zv7gybnpn7] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Style for the search input */
+.form-control[b-zv7gybnpn7] {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Add space between rows */
+.table-row[b-zv7gybnpn7] {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 2rem; /* Will be used instead by browsers that do not support `row-gap` */
+    row-gap: 20px; 
+}
+
+/* Style for the table row containing the content */
+.content-row[b-zv7gybnpn7] {
+    background-color: #f0f0f0;
+}
+
+/* Style for the content cell */
+.content-cell[b-zv7gybnpn7] {
+    padding: 10px 20px;
+}
+

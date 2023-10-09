@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notion", "Notion\Notion.csproj", "{5D1E1597-EFC9-43B2-A4D5-6E03B99482BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notion.Test", "Notion.Test\Notion.Test.csproj", "{38FE4B90-64D2-46FF-A075-5A5E54A4988D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D1E1597-EFC9-43B2-A4D5-6E03B99482BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1E1597-EFC9-43B2-A4D5-6E03B99482BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1E1597-EFC9-43B2-A4D5-6E03B99482BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1E1597-EFC9-43B2-A4D5-6E03B99482BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38FE4B90-64D2-46FF-A075-5A5E54A4988D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38FE4B90-64D2-46FF-A075-5A5E54A4988D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38FE4B90-64D2-46FF-A075-5A5E54A4988D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38FE4B90-64D2-46FF-A075-5A5E54A4988D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,67 @@
+body[b-bslqi3ux7p] {
+    font-family: 'lato', sans-serif;
+}
+
+
+.container[b-bslqi3ux7p] {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h2[b-bslqi3ux7p] {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+/* Style for each row */
+.table-row[b-bslqi3ux7p] {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    width: 100%; /* You can adjust the width as needed */
+    z-index: 1; /* Make sure it's above other content */
+    margin-bottom: 10px; /* Add space between rows */
+    height: 50px; /* Adjust the height as needed */
+}
+
+/* Style for table headers */
+.table-header[b-bslqi3ux7p] {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* Style for each column */
+.col[b-bslqi3ux7p] {
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+/* Style for buttons */
+button[b-bslqi3ux7p] {
+    margin-left: 10px;
+    float: right;
+}
+
+/* CSS */
+.static-row[b-bslqi3ux7p] {
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    width: 100%; /* You can adjust the width as needed */
+    z-index: 1; /* Make sure it's above other content */
+}
+
+.static-cell[b-bslqi3ux7p] {
+    /* Apply styles to your table cells as needed */
+   /*padding: 25px 30px;*/
+    display: flex;
+    justify-content: space-between;
+    width: 33%; /* You can adjust the width as needed */
+    box-sizing: border-box; /* Ensure padding doesn't make it wider than intended */
+}

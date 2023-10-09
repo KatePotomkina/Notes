@@ -1,0 +1,456 @@
+/* _content/Notion/Pages/Index.razor.rz.scp.css */
+/* Page background color and font */
+body[b-zv7gybnpn7] {
+    font-family: 'lato', sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Apply styles to the entire table */
+table[b-zv7gybnpn7] {
+    width: 100%;
+    
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the table */
+    border-radius: 10px; /* Rounded corners for the table */
+}
+
+.container[b-zv7gybnpn7] {
+    max-width: 1000px;
+    margin: 20px auto; /* Center the container with some margin */
+    padding: 20px;
+    background-color: #fff; /* White background for the container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+}
+
+h2[b-zv7gybnpn7] {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+    color: #333; /* Dark gray text color */
+}
+
+/* Style for each row */
+.table-row[b-zv7gybnpn7] {
+    background-color: #fff; /* White background for rows */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+transition: background-color 0.2s ease; /* Smooth color transition on hover */
+    border-radius: 5px; /* Rounded corners for rows */
+    height: fit-content;
+}
+
+/* Apply green background color on hover */
+.table-row:hover[b-zv7gybnpn7] {
+    background-color: #66bb6a; /* Green color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Style for table headers */
+.table-header[b-zv7gybnpn7] {
+    background-color: #ff9800; /* Orange color for headers */
+    color: #fff; /* White text color for headers */
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-top-left-radius: 5px; /* Rounded corners for header */
+    border-top-right-radius: 5px;
+}
+
+/* Style for each column */
+.col[b-zv7gybnpn7] {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Style for buttons */
+button[b-zv7gybnpn7] {
+    margin-left: 10px;
+    float: right;
+    background-color: #ff9800; /* Orange color for buttons */
+    color: #fff; /* White text color for buttons */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Smooth color transition on hover */
+}
+
+/* Button hover effect */
+button:hover[b-zv7gybnpn7] {
+    background-color: #f57c00; /* Darker orange on hover */
+}
+/* Style for the search input group */
+.input-group[b-zv7gybnpn7] {
+    margin-bottom: 20px;
+}
+
+/* Style for the table */
+.responsive-table[b-zv7gybnpn7] {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Style for table headers */
+.responsive-table th[b-zv7gybnpn7] {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Style for table cells */
+.responsive-table td[b-zv7gybnpn7] {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Style for buttons */
+button[b-zv7gybnpn7] {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the selected row */
+.responsive-table tr.selected[b-zv7gybnpn7] {
+    background-color: #f0f0f0;
+}
+
+/* Style for the text area inside the table */
+.responsive-table textarea[b-zv7gybnpn7] {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    resize: vertical;
+}
+
+/* Style for the Save Changes button */
+.responsive-table .save-button[b-zv7gybnpn7] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Style for the search input */
+.form-control[b-zv7gybnpn7] {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Add space between rows */
+.table-row[b-zv7gybnpn7] {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 2rem; /* Will be used instead by browsers that do not support `row-gap` */
+    row-gap: 20px; 
+}
+
+/* Style for the table row containing the content */
+.content-row[b-zv7gybnpn7] {
+    background-color: #f0f0f0;
+}
+
+/* Style for the content cell */
+.content-cell[b-zv7gybnpn7] {
+    padding: 10px 20px;
+}
+
+/* _content/Notion/Pages/Note.razor.rz.scp.css */
+.container[b-c92o2fmal6] {
+    max-width: 500px;
+}
+
+/* Center the form within the container */
+h3[b-c92o2fmal6] {
+    text-align: center;
+}
+
+/* Add margin to the top of the container */
+.mt-4[b-c92o2fmal6] {
+    margin-top: 20px;
+}
+/* Custom form styles */
+.custom-form[b-c92o2fmal6] {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.custom-form .mb-3[b-c92o2fmal6] {
+    margin-bottom: 20px;
+}
+
+.custom-form .form-label[b-c92o2fmal6] {
+    font-weight: bold;
+}
+
+.custom-form textarea.form-control[b-c92o2fmal6] {
+    resize: vertical;
+}
+
+.custom-form .btn-primary[b-c92o2fmal6] {
+    width: 100%;
+}
+
+/* Center the button */
+.custom-form .text-center[b-c92o2fmal6] {
+    text-align: center;
+}
+/* _content/Notion/Pages/Notes.razor.rz.scp.css */
+body[b-bslqi3ux7p] {
+    font-family: 'lato', sans-serif;
+}
+
+
+.container[b-bslqi3ux7p] {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h2[b-bslqi3ux7p] {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+/* Style for each row */
+.table-row[b-bslqi3ux7p] {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    width: 100%; /* You can adjust the width as needed */
+    z-index: 1; /* Make sure it's above other content */
+    margin-bottom: 10px; /* Add space between rows */
+    height: 50px; /* Adjust the height as needed */
+}
+
+/* Style for table headers */
+.table-header[b-bslqi3ux7p] {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* Style for each column */
+.col[b-bslqi3ux7p] {
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+/* Style for buttons */
+button[b-bslqi3ux7p] {
+    margin-left: 10px;
+    float: right;
+}
+
+/* CSS */
+.static-row[b-bslqi3ux7p] {
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    width: 100%; /* You can adjust the width as needed */
+    z-index: 1; /* Make sure it's above other content */
+}
+
+.static-cell[b-bslqi3ux7p] {
+    /* Apply styles to your table cells as needed */
+   /*padding: 25px 30px;*/
+    display: flex;
+    justify-content: space-between;
+    width: 33%; /* You can adjust the width as needed */
+    box-sizing: border-box; /* Ensure padding doesn't make it wider than intended */
+}
+/* _content/Notion/Shared/MainLayout.razor.rz.scp.css */
+.page[b-ezpwa2ut9j] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-ezpwa2ut9j] {
+    flex: 1;
+}
+
+.sidebar[b-ezpwa2ut9j] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-ezpwa2ut9j] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.top-row[b-ezpwa2ut9j]  a, .top-row .btn-link[b-ezpwa2ut9j] {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+}
+
+.top-row a:first-child[b-ezpwa2ut9j] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-ezpwa2ut9j] {
+        display: none;
+    }
+
+    .top-row.auth[b-ezpwa2ut9j] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-ezpwa2ut9j], .top-row .btn-link[b-ezpwa2ut9j] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-ezpwa2ut9j] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-ezpwa2ut9j] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-ezpwa2ut9j] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-ezpwa2ut9j], article[b-ezpwa2ut9j] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/Notion/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-w8zg7mtw4f] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-w8zg7mtw4f] {
+    height: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand[b-w8zg7mtw4f] {
+    font-size: 1.1rem;
+}
+
+.oi[b-w8zg7mtw4f] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-w8zg7mtw4f] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+.nav-item:first-of-type[b-w8zg7mtw4f] {
+    padding-top: 1rem;
+}
+
+.nav-item:last-of-type[b-w8zg7mtw4f] {
+    padding-bottom: 1rem;
+}
+
+.nav-item[b-w8zg7mtw4f]  a {
+    color: #d7d7d7;
+    border-radius: 4px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+}
+
+.nav-item[b-w8zg7mtw4f]  a.active {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+.nav-item[b-w8zg7mtw4f]  a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-w8zg7mtw4f] {
+        display: none;
+    }
+
+    .collapse[b-w8zg7mtw4f] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
+/* Navbar container styles */
+.navbar[b-w8zg7mtw4f] {
+    background-color: #f8f9fa; /* Background color */
+    border-bottom: 1px solid #dee2e6; /* Bottom border */
+    padding: 10px 0; /* Vertical padding */
+}
+
+/* Navbar button styles */
+.navbar button[b-w8zg7mtw4f] {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around text */
+    cursor: pointer; /* Show pointer on hover */
+    margin-right: 10px; /* Add margin to separate buttons */
+}
+
+/* Navbar button hover effect */
+.navbar button:hover[b-w8zg7mtw4f] {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Navbar toggler icon styles */
+.navbar-toggler-icon[b-w8zg7mtw4f] {
+    background-color: #007bff; /* Toggler icon color */
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-link[b-w8zg7mtw4f] {
+    color: #000; /* Link text color */
+    font-weight: bold; /* Bold font for active link */
+    margin-right: 20px; /* Add margin to separate links */
+}
+
+/* Active link styles */
+.nav-item.active .nav-link[b-w8zg7mtw4f] {
+    color: #007bff; /* Active link color */
+}
